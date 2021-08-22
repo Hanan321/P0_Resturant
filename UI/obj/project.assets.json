@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Revature\\210726-wvu-net-ext\\P0-Hanan-Elarabi\\P0-HananResturants\\UI\\UI.csproj",
+      "projectUniqueName": "C:\\Revature\\210726-wvu-net-ext\\P0_Resturant\\UI\\UI.csproj",
       "projectName": "UI",
-      "projectPath": "C:\\Revature\\210726-wvu-net-ext\\P0-Hanan-Elarabi\\P0-HananResturants\\UI\\UI.csproj",
+      "projectPath": "C:\\Revature\\210726-wvu-net-ext\\P0_Resturant\\UI\\UI.csproj",
       "packagesPath": "C:\\Users\\um-zi\\.nuget\\packages\\",
-      "outputPath": "C:\\Revature\\210726-wvu-net-ext\\P0-Hanan-Elarabi\\P0-HananResturants\\UI\\obj\\",
+      "outputPath": "C:\\Revature\\210726-wvu-net-ext\\P0_Resturant\\UI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\um-zi\\AppData\\Roaming\\NuGet\\NuGet.Config"

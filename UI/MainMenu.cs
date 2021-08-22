@@ -5,6 +5,8 @@ namespace UI
    public class MainMenu :IMenu
     {
       public void start(){
+          bool repeat = true;
+        do{
           Console.WriteLine("Welcome to Hanan's resturants app!");
           Console.WriteLine("[0] Exit.");
           Console.WriteLine("[1] View All Resturants");
@@ -13,26 +15,35 @@ namespace UI
 
             switch(Console.ReadLine()){
                 case "0":
-
+                   Console.WriteLine("Good Buy!\n");
+                    repeat = false;
                     break;
                 case "1":
-                        Console.WriteLine("View All Resturants");//ViewAllResturants()
+                        ViewAllResturants();
                     break;
                 case "2":
-                        Console.WriteLine("Add a review for a resturant");//AddAReview()
+                        AddAReview();
                     break;
                 case "3":
-                        Console.WriteLine("Show other customers reviews.");//ShowOtherCustomersReview()
+                        ShowReviews();
                     break;
                     default:
-                        Console.WriteLine("We don't understand what you are doing!");
+                        Console.WriteLine("We don't understand what you are doing!\n");
                     break;
 
             }
-
-
-
+            }while(repeat);
 
        }
+        public void ViewAllResturants(){
+            Console.WriteLine("View All Resturants.\n");
+        }
+        public void AddAReview(){
+            Console.WriteLine("Add a review for a resturant.\n");
+        }
+        public void ShowReviews(){
+            Console.WriteLine("Show other customers reviews.\n");
+        }
+
     }
 }
