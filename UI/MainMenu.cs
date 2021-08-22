@@ -1,9 +1,12 @@
 using System;
+using Models;
+
 
 namespace UI
 {
    public class MainMenu :IMenu
     {
+       // Users user = new Users();
       public void start(){
           bool repeat = true;
         do{
@@ -26,6 +29,9 @@ namespace UI
                     break;
                 case "3":
                         ShowReviews();
+                        break;
+                case "4":
+                       ShowUsers();
                     break;
                     default:
                         Console.WriteLine("We don't understand what you are doing!\n");
@@ -43,6 +49,11 @@ namespace UI
         }
         public void ShowReviews(){
             Console.WriteLine("Show other customers reviews.\n");
+        }
+
+        public void ShowUsers(){
+
+            Console.WriteLine("Show users\n");
         }
 
     }
