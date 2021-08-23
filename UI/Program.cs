@@ -1,7 +1,8 @@
 ﻿using System;
-using Microsoft.EntityFrameWorkCore;
 using Microsoft.Extensions.Configuration;
-
+using Microsoft.EntityFrameworkCore;
+using System.IO;
+using DL.Entities;
 
 namespace UI
 {
@@ -16,15 +17,15 @@ namespace UI
  //connect to database through my link in the (json) file
  var configuration = new ConfigurationBuilder()
     .SetBasePath(Directory.GetCurrentDirectory())
-    .AddJsonFile("appsettings.json")
+    .AddJsonFile("appsetting.json")
     .Build();
 
 //get the connection string 
-    string connectionString = configuration.GetConnectionString("hananmydb");
+    string ConnectionString = configuration.GetConnectionString("hananmydb");
 //(I must review fils names)
     DbContextOptions<hananmydbContext> options = new DbContextOptionsBuilder<hananmydbContext>()
     .UseSqlServer(ConnectionString)
-    .options;
+    .Options;
 
     var context = new hananmydbContext(options);//our instance of database
     
