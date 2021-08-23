@@ -4,17 +4,13 @@ namespace Models
 {
     public class Resturants
     {
-        /*public Resturant(){
+        public Resturants(){
 
         }
-        public Resturant(string name){ 
-            this.Name = name;
+        public Resturants(string name){ 
+            this.name = name;
         }
-        public Resturant(int id, string name) : this(name)
-        {
-            this.Id = id;
-           
-        }
+        public Resturants(int id, string name) : this(name) => this.id = id;
 
         public int id{ get; set;}
         public string name{ get; set;} 
